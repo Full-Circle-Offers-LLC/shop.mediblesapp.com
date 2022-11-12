@@ -49,7 +49,7 @@ if ($_POST) {
             } else {
                 if (isset($domainData['domain'])) {
 
-                    $txt = "<p style=\"margin: 10px 0;\"><a target='_blank' href='http://" . $domainData['domain'] . "' style='font-size: 17px; text-decoration: none; font-weight: bold; color: #5d5d5d;'>Click here to setup your website: " . $domainData['domain'] . "</a></p>";
+                    $txt = "<p style=\"margin: 10px 0;\"><a target='_blank' href='https://mediblesapp.com/shop" . $domainData['domain'] . "' style='font-size: 17px; text-decoration: none; font-weight: bold; color: #5d5d5d;'>Click here to setup your website: https://mediblesapp.com/shop " . $domainData['domain'] . "</a></p>";
                     print '<div class="alert alert-success" style="margin-top:20px;">
                           <div class="alert-message">
                           
