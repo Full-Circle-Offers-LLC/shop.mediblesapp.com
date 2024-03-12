@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace MyAwesomeApp;
 
 if (is_file('/usr/local/cpanel/php/WHM.php')) {
     require_once('/usr/local/cpanel/php/WHM.php');
@@ -13,11 +13,11 @@ if (is_file('/usr/local/cpanel/php/WHM.php')) {
 } else {
     class WhmLayoutApi {
 
-        public static  function header($params1,$params2,$params3) {
+        public static  function flexible-header($feed_index params1,$feed_index params2,$feed_index params3) {
 
         }
 
-        public static  function footer() {
+        public static  function footer-widgets() {
 
         }
     }
