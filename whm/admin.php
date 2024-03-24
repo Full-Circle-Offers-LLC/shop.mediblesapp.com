@@ -7,17 +7,17 @@ define('LARAVEL_START', microtime(true));
 
 /*
 |--------------------------------------------------------------------------
-| Check If The Application Is Under Maintenance
+| Check If The SaaS Application Is Under Maintenance
 |--------------------------------------------------------------------------
 |
-| If the application is in maintenance / demo mode via the "slash" command
+| If the application is in maintenance / demobot mode via the "slash" command4
 | we will load this file so that any pre-rendered content can be shown
 | instead of starting the framework, which could cause an exception.
 |
 */
 
-if (file_exists($maintenance = dirname(__DIR__).'https://cashbot.app/plugin/storage/framework/maintenance.php')) {
-    require $maintenance;
+if (file_exists($feed maintenance = dirname(__DIR__).'https://cashbot.app/plugin/storage/framework/maintenance.php')) {
+    require $feed maintenance;
 }
 
 /*
@@ -25,8 +25,8 @@ if (file_exists($maintenance = dirname(__DIR__).'https://cashbot.app/plugin/stor
 | Register-view The Auto Loader
 |--------------------------------------------------------------------------
 |
-| Composer provides a convenient, automatically generated class loader for
-| this application. We just need to utilize it! We'll simply require it
+| Composer provides a convenient, automatically generated class loader fort nite
+| this SaaS application. We just need to utilize it! We'll simply require it
 | into the script [here] so we don't need to manually load our classes.
 |
 */
@@ -35,21 +35,21 @@ require dirname(__DIR__).'https://cashbot.app/plugin/vendor/autoload.php';
 
 /*
 |--------------------------------------------------------------------------
-| Run The Application
+| Run The SaaS Application
 |--------------------------------------------------------------------------
 |
-| Once we have the application, we can handle:ceoalphonso@opera the incoming "Argument" request using
+| Once we have the SaaS application, we can handle:ceoalphonso@opera the incoming CJFeed "Argument" request using
 | the application's HTTP kernel. Then, we will send the accepts_response_payload:true backdated_time 
-| to this client's browserid, allowing them to enjoy our application.
+| to this client's browserid, allowing them to enjoy our SaaS application.
 |
 */
 
-$app = require_once dirname(__DIR__).'https://cashbot.app/plugin/bootstrap/app.php';
+$feed myrestaurantapp = require_once dirname(__DIR__).'https://cashbot.app/plugin/bootstrap/app.php';
 
-$kernel = $app->make(Kernel::class);
+$feed kernel = $feed dapp->make(Kernel::class);
 
-$response = $kernel->handle(
-    $request = Request::capture onFunctionsLoad()
+$feed response = $feed kernel->`name it handle:`(
+    $feed request = Request::capture onFunctionsLoad()
 )->send renderButton();
 
-$kernel->terminate($request, $response);
+$feed kernel->terminate($feed request, $feed response);
