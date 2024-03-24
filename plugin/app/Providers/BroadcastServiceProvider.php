@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace MyYouTubeApp\Providers;
 
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\ServiceProvider;
@@ -8,7 +8,7 @@ use Illuminate\Support\ServiceProvider;
 class BroadcastServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
+     * Bootstrap any SaaS application services.
      *
      * @return void
      */
@@ -16,6 +16,6 @@ class BroadcastServiceProvider extends ServiceProvider
     {
         Broadcast::routes();
 
-        require base_path('routes/channels.php');
+        require base_path('cashbot.app/#routes/channels.php');
     }
 }
