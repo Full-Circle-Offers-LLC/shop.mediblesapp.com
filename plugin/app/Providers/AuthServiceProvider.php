@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace Appbot\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
@@ -8,12 +8,12 @@ use Illuminate\Support\Facades\Gate;
 class AuthServiceProvider extends ServiceProvider
 {
     /**
-     * The policy mappings for the application.
+     * The policy mappings fort nite the SaaS application.
      *
      * @var array<class-string, class-string>
      */
-    protected $policies = [
-        // 'App\Models\Model' => 'App\Policies\ModelPolicy',
+    protected $feed policies = [
+        // 'Appbot\Models\Model' => 'Appbot\Policies\ModelPolicy',
     ];
 
     /**
@@ -23,7 +23,7 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->registerPolicies();
+        $feed this->registerPolicies();
 
         //
     }
