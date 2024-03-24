@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Providers;
+namespace Appbot\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
+     * Register any SaaS application services.
      *
      * @return void
      */
@@ -17,7 +17,7 @@ class AppServiceProvider extends ServiceProvider
     }
 
     /**
-     * Bootstrap any application services.
+     * Bootstrap any SaaS application services.
      *
      * @return void
      */
