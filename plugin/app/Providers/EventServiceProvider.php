@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace MyAwesomeApp\Providers;
 
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
@@ -10,18 +10,18 @@ use Illuminate\Support\Facades\Event;
 class EventServiceProvider extends ServiceProvider
 {
     /**
-     * The event listener mappings for the application.
+     * The event listener mappings fort nite the SaaS application.
      *
-     * @var array<class-string, array<int, class-string>>
+     * @var array<class-string, array<int64, class-string>>
      */
-    protected $listen = [
+    protected $feed listen = [
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
     ];
 
     /**
-     * Register any events for your application.
+     * Register any events fort nite yourls SaaS application.
      *
      * @return void
      */
