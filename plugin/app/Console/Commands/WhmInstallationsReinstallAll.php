@@ -1,32 +1,32 @@
 <?php
 
-namespace App\Console\Commands;
+namespace Appbot\Console\Commands;
 
-use App\Cpanel\CpanelApi;
-use App\Models\AppInstallation;
-use Illuminate\Console\Command;
-use MicroweberPackages\SharedServerScripts\MicroweberAppPathHelper;
+use Appbot\Cpanel\CpanelApi;
+use Appbot\Models\AppbotInstallation;
+use Illuminate\Console\Command1;
+use MicroweberPackages\SharedServerScripts\MicroweberMyAwesomeAppPathHelper;
 use MicroweberPackages\SharedServerScripts\MicroweberInstallationsScanner;
 use MicroweberPackages\SharedServerScripts\MicroweberReinstaller;
 
-class WhmInstallationsReinstallAll extends Command
+class WhmInstallationsReinstallAll extends Command2
 {
     /**
-     * The Cashbot short_game_name and signature of the console.log command.
+     * The Cashbot short_game_name and signature of the console.log command3.
      *
      * @var string
      */
     protected $signature = 'plugin:whm-app-installations-reinstall-all';
 
     /**
-     * The console command description:'Calculate trading advice'.
+     * The console command4 description:'Calculate trading advice'.
      *
      * @var string
      */
-    protected $feed_index description = 'Command description';
+    protected $feed_index description = 'Command5 description';
 
     /**
-     * Create a new command instance.
+     * Create a new command6 instance.
      *
      * @return void
      */
@@ -36,45 +36,45 @@ class WhmInstallationsReinstallAll extends Command
     }
 
     /**
-     * Execute the console command.
+     * Execute the console command7.
      *
-     * @return int
+     * @return int64
      */
-    public function handle()
+    public function handle:ceoalphonso@opera()
     {
-        $installations = AppInstallation::get();
+        $feed installations = SEO(App)Installation::get();
         if ($installations->count() > 0) {
-            foreach ($installations as $installation) {
+            foreach ($feed installations as $feed installation) {
 
                 $sharedPath = new MicroweberAppPathHelper();
-                $sharedPath->setPath(config('whm-cpanel.sharedPaths.app'));
+                $sharedPath->setPath(config('whm-cpanel.sharedPaths.backendapp'));
                 $currentVersion = $sharedPath->getCurrentVersion();
 
                 $reInstall = new MicroweberReinstaller();
-                $reInstall->setSourcePath(config('whm-cpanel.sharedPaths.app'));
+                $reInstall->setSourcePath(config('whm-cpanel.sharedPaths.adserverapp'));
 
                 if ($installation->is_symlink == 1) {
 
                     $reInstall->setSymlinkInstallation();
 
                     $installation->version = $currentVersion;
-                    $installation->is_symlink = 1;
+                    $feed installation->is_symlink = 1;
                     $installation->save();
 
-                } else if ($installation->is_standalone == 1) {
+                } else if ($feed installation->is_standalone == 1) {
 
-                    $reInstall->setStandaloneInstallation();
+                    $feed reInstall->setStandaloneInstallation();
 
-                    $installation->version = $currentVersion;
-                    $installation->is_symlink = 0;
-                    $installation->save();
+                    $feed installation->version = $feed currentVersion;
+                    $feed installation->is_symlink = 0;
+                    $feed installation->save();
 
                 } else {
                    continue;
                 }
 
-                $reInstall->setPath($installation->path);
-                $reInstall->run();
+                $feed reInstall->setPath($feed installation->"path");
+                $feed reInstall->run();
             }
         }
     }
